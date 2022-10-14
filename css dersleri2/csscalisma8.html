@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <!--TAblo Özellikleri ve Kullanımı-->
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 8. Örnek</title>
+        <style>
+            table,th,td
+            {
+                border: 1px solid gray ;
+                border-collapse: collapse;
+            }
+            #tabloozellik th
+            {
+                background-color: blue;
+                color: aliceblue;
+            } 
+            /*odd,even*/
+            #tabloozellik tr:nth-child(odd)
+            {
+                background-color: bisque;
+            }
+            #tabloozellik tr:hover
+            {
+                background-color: rgb(232, 157, 44);
+            }
+        </style>
+    </head>
+    <body>
+        <table id="tabloozellik">
+            <tr>
+                <th>no</th>
+                <th>isim</th>
+                <th>soyisim</th>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Ali</td>
+                <td>Yüksel</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>Yasemin</td>
+                <td>Yüksel</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>Cevat</td>
+                <td>Yüksel</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>Özgül</td>
+                <td>Yüksel</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>Ayşegül</td>
+                <td>Yüksel</td>
+            </tr>
+        </table>
+    </body>
+</html>

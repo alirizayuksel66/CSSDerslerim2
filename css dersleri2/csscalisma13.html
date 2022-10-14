@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<!--Açılır Menü Yapımı-->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 13. Örnek</title>
+     <style>
+        ul {
+            list-style-type: none;
+            background-color: #3f3f3f;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px;
+
+            margin-left: 0px;
+        }
+
+        ul li:hover {
+            background-color: red;
+            transition: 0.5s;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        #acilirtablo {
+            position: absolute;
+            z-index: 1;
+            display: none;
+            margin-top: 28px;
+            margin-left: -95px;
+            width: 125px;
+        }
+        .homehover:hover #acilirtablo
+        {
+            display: inline-block;
+        }
+        #acilirtablo2
+        {
+            position: absolute;
+            z-index: 1;
+            display: none;
+            margin-top: -10px;
+            margin-left: 0px;
+            width: 125px;
+        }
+        .home2hover:hover #acilirtablo2
+        {
+            display: inline-block;
+        }
+      </style>
+    </head>
+
+    <body>
+      <ul>
+            <li class="homehover">
+             <a href="">Home</a>
+             <div id="acilirtablo">
+                   <ul>
+                      <li style="display: block;">Home1</li>
+                      <li class="home2hover" style="display: block;">
+                        Home2
+                      <div id="acilirtablo2">
+                        <ul>
+                            <li>Home2.1</li>
+                            <li>Home2.2</li>
+                            <li>Home2.3</li>
+                            <li>Home2.4</li>
+                        </ul>
+                      </div>
+                      </li>
+                      <li style="display: block;">Home3</li>
+                      <li style="display: block;">Home4</li>
+                   </ul>
+              </div>
+         </li>
+         <li><a href="">News</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+      </ul>
+    </body>
+
+</html>
